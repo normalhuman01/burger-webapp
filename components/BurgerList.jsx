@@ -1,22 +1,22 @@
-import styles from "../styles/PizzaList.module.css";
-import PizzaCard from "./PizzaCard";
+import styles from "../styles/BurgerList.module.css";
+import BurgerCard from "./BurgerCard";
 
-const PizzaList = ({ pizzaList }) => {
+const BurgerList = ({ BurgerList }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>THE BEST PIZZA IN TOWN</h1>
+      <h1 className={styles.title}>THE BEST Burger IN TOWN</h1>
       <p className={styles.desc}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
         in pretium molestie. Interdum et malesuada fames acme. Lorem ipsum dolor
         sit amet, consectetur adipiscing elit.
       </p>
       <div className={styles.wrapper}>
-        {pizzaList.map((pizza) => (
-          <PizzaCard key={pizza._id} pizza={pizza} />
+        {BurgerList.map((Burger) => (
+          <BurgerCard key={Burger._id} Burger={Burger} />
         ))}
       </div>
     </div>
   );
 };
 
-export default PizzaList;
+export default BurgerList;
